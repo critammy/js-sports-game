@@ -2,7 +2,9 @@
 //2. random chance
 //3. set goals
 //4. reset button
-
+let goal = 0;
+let shots = 0;
+let reset = 0;
 
 
 //Team One
@@ -15,8 +17,12 @@ teamOneButton.addEventListener("click", function() {
     if (Math.random() < .5) {
         console.log (" + team scored")}
 })
+let teamOneGoals = document.querySelector("#teamone-numgoals")
+let goal = Number(teamOneGoals.innerHTML) + 1;
+
 
 //Team Two
+
 const teamTwoShots = document.querySelector("#teamtwo-numshots")
 const teamTwoButton = document.querySelector("#teamtwo-shoot-button")
 teamTwoButton.addEventListener("click", function() {
@@ -26,7 +32,14 @@ teamTwoButton.addEventListener("click", function() {
     if (Math.random() < .5){
         console.log (" + team scored")}
 })
-let teamTwoGoals = document.querySelector("#teamtwo-numgoals")
+const teamTwoGoals = document.querySelector("#teamtwo-numgoals")
+let goal = Number(teamTwoGoals.innerHTML) + 1;
 
 
 //Reset button
+
+const resetButton = document.querySelector("#reset-button")
+const resetNumber = document.querySelector("#num-resets")
+resetButton.addEventListener ("click", function () {
+    
+})
