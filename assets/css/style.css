@@ -3,13 +3,16 @@
 }
 .left {
     float: left;
+    background-color: yellow;
 }
 .right {
     float: right;
+    background-color: yellow;
 }
 .clear {
     clear: both;
 }
 #reset-container, h1 {
     text-align: center;
+    background-color: royalblue;
 }
